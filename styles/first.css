@@ -1,0 +1,41 @@
+p {
+    color: black;
+}
+li {
+    color: grey;
+}
+html {
+    background-color: rgb(60, 34, 85);
+}
+body {
+    margin: 0 auto;
+    width: 600px;
+    border: 5px solid green;
+    padding: 0 20px 20px 20px;
+    background-color: rgb(32, 32, 2);
+}
+a {
+    color: yellowgreen;
+}
+.title {
+    text-decoration: underline;
+    text-align: center;
+}
+h1 {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 3px 3px 1px black;
+    display: block;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+video {
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
