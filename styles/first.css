@@ -1,18 +1,18 @@
+
 p {
-    color: black;
+    color: rgb(231, 255, 192);
 }
 li {
     color: grey;
 }
 html {
-    background-color: rgb(60, 34, 85);
+    background-image: url(https://images.pexels.com/photos/13987012/pexels-photo-13987012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 body {
     margin: 0 auto;
     width: 600px;
-    border: 5px solid green;
     padding: 0 20px 20px 20px;
-    background-color: rgb(32, 32, 2);
+    background-color: black;
 }
 a {
     color: yellowgreen;
@@ -25,17 +25,20 @@ h1 {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-shadow: 3px 3px 1px black;
+    text-shadow: 3px 3px 1px blueviolet;
     display: block;
 }
 
 img {
     margin: auto;
-    display: block;
+    display: inline-block;
+    height: 200px;
+    width: 600px
 }
 video {
-    height: 300px;
+    height: 200px;
     align-items: center;
     justify-content: center;
     display: flex;
+    width: 300px;
 }
