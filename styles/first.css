@@ -42,3 +42,8 @@ video {
     display: flex;
     width: 300px;
 }
+
+strong {
+    color: red;
+    
+}
