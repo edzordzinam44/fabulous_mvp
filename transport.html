@@ -6,21 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transportation</title>
   <link rel="stylesheet" href="styles/first.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <main>
 
     <section class="nav">
-      <nav>
-        <ul>
-          <li class="homepage"><a href="index.html">Home</a></li>
-          <li class="about-us"><a href="about.html">About</a></li>
-          <li class="contact"><a href="contact.html">Contact</a></li>
-          <li class="tranport"><a href="transport.html">Transport</a></li>
-          <li class="service"><a href="services.html">Services</a></li>
-        </ul>
+      <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label for="menu-open" class="menu-open-button">
+          <span class="menu-line menu-line-1 "></span>
+          <span class="menu-line menu-line-2"></span>
+          <span class="menu-line menu-line-3"></span>
+        </label>
+
+        <a href="#" class="menu-item">Home <i class="fa fa-home"></i></a>
+        <a href="#" class="menu-item">About <i class="fa fa-about"></i></a>
+        <a href="#" class="menu-item">Contact <i class="fa fa-contact-card"></i></a>
+        <a href="#" class="menu-item">Transport <i class="fa fa-transport"></i></a>
+        <a href="#" class="menu-item">Services <i class="fa fa-services"></i></a>
       </nav>
+
     </section>
     <section>
       <header>
@@ -39,11 +46,13 @@
           without confronting strangers for directions and later end up getting lost.
         </p>
       </div>
-      <ul>
-        <li>Tavellers</li>
-        <li>Foreigners</li>
-        <li>Commuters</li>
-      </ul>
+      <section class="section-category">
+        <ul>
+          <li>Tavellers</li>
+          <li>Foreigners</li>
+          <li>Commuters</li>
+        </ul>
+      </section>
     </section>
     <section>
       <h4>Our Aim</h4>
