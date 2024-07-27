@@ -1,3 +1,13 @@
+*, *:before, :after {
+    box-sizing: border-box;
+}
+
+/* Body ================== */
+body {
+    background-color: black;
+    font-weight: bold;
+}
+
 img {
     background-size: cover;
     width: 100%;
@@ -19,6 +29,8 @@ img {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     text-decoration: underline;
+    color: white;
+    top: 40px;
 }
 
 .title::after {
@@ -31,7 +43,7 @@ img {
     visibility: hidden;
     transform-origin: center;
     transition: all 0.5s ease-in-out;
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(243, 9, 9);
     transform: scale(0);
     padding: 1.2px;
 }
@@ -49,14 +61,119 @@ video {
     background: fixed;
 }
 
+/* Base line section */
+
 .under {
     /* margin: 20px; */
     padding: 4px;
     background-color: rgb(131, 71, 71);
 }
 
- nav {
+nav {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 15px
- }
+    font-size: 15px;
+}
+
+a:link {
+    color: #fff;
+}
+
+p, li, h3, h4 {
+    color: #fff;
+}
+
+/* Navigation section */
+.menu {
+    position: relative;
+    width: 70%;
+    /* padding-top: 10px; */
+}
+
+.menu-open {
+    display: none;
+}
+
+.menu-open-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f03;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu-open-button .menu-line {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-radius: 2px;
+    transition: transform 0.4s;
+    height: 2px;
+    background-color: #fff;
+}
+
+.menu-open-button .menu-line-1 {
+    top: 18px;
+    left: 15px;
+}
+
+.menu-open-button .menu-line-2 {
+    top: 26px;
+    left: 15px;
+}
+
+.menu-open-button .menu-line-3 {
+    top: 34px;
+    left: 15px;
+}
+
+.menu-item {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f03;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    top: 60px;
+    transform: translate(-20px);
+}
+
+.menu-item:hover {
+    background-color: #201718;
+}
+
+.menu-open:checked + .menu-open-button .menu-line-1 {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-open:checked ~ .menu-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-item:nth-child(3) {
+    top: 60px;
+}
+
+.menu-item:nth-child(4) {
+    top: 110px;
+}
+
+.menu-item:nth-child(5) {
+    top: 170px;
+}
+
+.menu-item:nth-child(6) {
+    top: 230px;
+}
+
+.menu-item:nth-child(7) {
+    top: 290px;
+}

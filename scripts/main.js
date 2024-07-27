@@ -3,7 +3,7 @@
 
 
 let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
+let myHeading = document.querySelector(".title");
 
 myButton.onclick= () => {
     setUserName()
@@ -22,6 +22,7 @@ function setUserName() {
     setUserName()
   } else {
     const storedName = localStorage.getItem("name");
+    updateHeading(storedName);
     myHeading.textContent = `Lets start the Journey, ${myName}!!`;
   }
 }
